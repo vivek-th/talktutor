@@ -1,0 +1,105 @@
+
+
+h1{
+    position: ;
+    top:2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    text-shadow: 0,0,10px , rgba(0,0,0,0.3);
+}
+
+.container{
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    display: flex;
+    gap: 50px;
+    width: px;
+    overflow: hidden;
+    margin-left: 250px;
+    justify-content: center;
+    margin-right: 150px;
+}
+
+
+.image{
+    filter: grayscale(100%);
+    background-image: linear-gradient(to top, grey, white);
+    margin: px;
+    box-shadow: 10px;
+    max-width:fit-content;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.image:hover{
+    content:counter(hello my mae is skjkfnd);
+    border-top-left-radius: 10px;
+    transition: 1s;
+    filter: drop-shadow(5px 5px 5px #666666);
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+
+
+
+.image:hover::before {
+    opacity: 1;
+}
+
+.card{
+position: relative;
+}
+
+.card figcaption{
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+   font-size: 16px;
+   color: black;
+   opacity: 0;
+   border-radius: 0 0 10px 10px;
+   background-image: linear-gradient(0,0,0,0.5)0% ,rgba(255,255,255);
+   transition: 1.1;
+}
+
+.card :hover figcaption{
+    opacity: 0;
+    transform: scale(1.03);
+}
+
+/* Styling for modal popup */
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    margin: 5px 0;
+  }
+  
